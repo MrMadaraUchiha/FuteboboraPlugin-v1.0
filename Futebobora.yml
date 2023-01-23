@@ -1,0 +1,531 @@
+arena:
+  name: '1'
+  displayname: Futebobora
+  enabled: true
+  gamemode: HUBGAME
+  corner-1:
+    world: world
+    x: -26.0
+    y: 164.0
+    z: 117.0
+    yaw: 0.0
+    pitch: 0.0
+  corner-2:
+    world: world
+    x: -64.0
+    y: 150.0
+    z: 67.0
+    yaw: 0.0
+    pitch: 0.0
+  meta:
+    meta:
+      max-score: 10
+      even-teams: false
+      join-sign-lines:
+      - '&lFutebobora'
+      - <game>
+      - <state>
+      - <sumplayers>/<summaxplayers>
+      leave-sign-lines:
+      - '&lFutebobora'
+      - <game>
+      - §fLeave
+      - <sumplayers>/<summaxplayers>
+      leave-spawnpoint:
+        world: world
+        x: -44.994389937709315
+        y: 145.0
+        z: 48.06944694206512
+        yaw: 177.13623046875
+        pitch: 9.75001049041748
+      gamemode: ADVENTURE
+      signs:
+        joining: {}
+        leaving:
+          '1':
+            world: world
+            x: -29.0
+            y: 152.0
+            z: 92.0
+            yaw: 0.0
+            pitch: 0.0
+    hubgame-meta:
+      join-selection:
+      - Click on the team to join the match.
+      - <redcolor>[<red>]
+      - <bluecolor>[<blue>]
+      instant-forcefield-join: false
+      reset-arena-on-empty: true
+      teleport-on-join: true
+    team-red:
+      displayname: Equipe Vermelha
+      prefix: '&c'
+      min-amount: 0
+      max-amount: 5
+      walking-speed: 0.2
+      goal:
+        corner-1:
+          world: world
+          x: -42.0
+          y: 154.0
+          z: 69.0
+          yaw: 0.0
+          pitch: 0.0
+        corner-2:
+          world: world
+          x: -48.0
+          y: 151.0
+          z: 67.0
+          yaw: 0.0
+          pitch: 0.0
+      armor:
+        '1':
+          v: 3120
+          type: LEATHER_BOOTS
+          meta:
+            ==: ItemMeta
+            meta-type: LEATHER_ARMOR
+            color: &id001
+              ==: Color
+              RED: 255
+              BLUE: 0
+              GREEN: 0
+        '2':
+          v: 3120
+          type: LEATHER_LEGGINGS
+          meta:
+            ==: ItemMeta
+            meta-type: LEATHER_ARMOR
+            color: *id001
+        '3':
+          v: 3120
+          type: LEATHER_CHESTPLATE
+          meta:
+            ==: ItemMeta
+            meta-type: LEATHER_ARMOR
+            color: *id001
+        '4': null
+      inventory:
+        '1': null
+        '2': null
+        '3': null
+        '4': null
+        '5': null
+        '6': null
+        '7': null
+        '8': null
+        '9': null
+        '10': null
+        '11': null
+        '12': null
+        '13': null
+        '14': null
+        '15': null
+        '16': null
+        '17': null
+        '18': null
+        '19': null
+        '20': null
+        '21': null
+        '22': null
+        '23': null
+        '24': null
+        '25': null
+        '26': null
+        '27': null
+        '28': null
+        '29': null
+        '30': null
+        '31': null
+        '32': null
+        '33': null
+        '34': null
+        '35': null
+        '36': null
+      join-message: Voce entrou no jogo como <teamcolor><team>.
+      score-message-title: '<redcolor><redscore> : <bluecolor><bluescore>'
+      signs:
+        '1':
+          world: world
+          x: -47.0
+          y: 151.0
+          z: 59.0
+          yaw: 0.0
+          pitch: 0.0
+        '2':
+          world: world
+          x: -47.0
+          y: 151.0
+          z: 59.0
+          yaw: 0.0
+          pitch: 0.0
+      score-message-subtitle: <redcolor><player> marcou para <red>
+      leave-message: Voce saiu do jogo.
+      win-message-title: <redcolor><red>
+      lines:
+      - '&lFutebobora'
+      - <game>
+      - <teamcolor><team>
+      - <players>/<maxplayers>
+      win-message-subtitle: <redcolor><red>&a ganhou a partida.
+      draw-message-title: <redcolor><red>
+      draw-message-subtitle: '&ePartida terminou empate.'
+      points-per-goal: 1
+      points-per-opponent-death: 0
+    minigame-meta:
+      match-times:
+        '1':
+          duration: 150
+          close-type: TIME_OVER
+          switch-goals: false
+          ball-playable: true
+          respawn: true
+          start-message-title: ''
+          start-message-subtitle: ''
+        '2':
+          duration: 15
+          close-type: NEXT_GOAL
+          switch-goals: false
+          ball-playable: true
+          respawn: false
+          start-message-title: §6Overtime
+          start-message-subtitle: Restam apenas alguns segundos
+        '3':
+          duration: 10
+          close-type: TIME_OVER
+          switch-goals: false
+          ball-playable: false
+          respawn: false
+          start-message-title: §6Pausa
+          start-message-subtitle: Faca uma pequena pausa.
+        '4':
+          duration: 150
+          close-type: TIME_OVER
+          switch-goals: true
+          ball-playable: true
+          respawn: true
+          start-message-title: ''
+          start-message-subtitle: ''
+        '5':
+          duration: 15
+          close-type: NEXT_GOAL
+          switch-goals: false
+          ball-playable: true
+          respawn: false
+          start-message-title: §6Overtime
+          start-message-subtitle: Restam apenas alguns segundos
+        '6':
+          duration: 10
+          close-type: TIME_OVER
+          switch-goals: false
+          ball-playable: false
+          respawn: false
+          start-message-title: ''
+          start-message-subtitle: ''
+      lobby-duration: 20
+      remaining-players-message: '&aWaiting for &c<remaining>&a more player(s)...'
+    team-blue:
+      displayname: Equipe Azul
+      prefix: '&9'
+      min-amount: 0
+      max-amount: 5
+      walking-speed: 0.2
+      goal:
+        corner-1:
+          world: world
+          x: -42.0
+          y: 154.0
+          z: 117.0
+          yaw: 0.0
+          pitch: 0.0
+        corner-2:
+          world: world
+          x: -47.0
+          y: 151.0
+          z: 115.0
+          yaw: 0.0
+          pitch: 0.0
+      armor:
+        '1':
+          v: 3120
+          type: LEATHER_BOOTS
+          meta:
+            ==: ItemMeta
+            meta-type: LEATHER_ARMOR
+            color: &id002
+              ==: Color
+              RED: 0
+              BLUE: 255
+              GREEN: 0
+        '2':
+          v: 3120
+          type: LEATHER_LEGGINGS
+          meta:
+            ==: ItemMeta
+            meta-type: LEATHER_ARMOR
+            color: *id002
+        '3':
+          v: 3120
+          type: LEATHER_CHESTPLATE
+          meta:
+            ==: ItemMeta
+            meta-type: LEATHER_ARMOR
+            color: *id002
+        '4': null
+      inventory:
+        '1': null
+        '2': null
+        '3': null
+        '4': null
+        '5': null
+        '6': null
+        '7': null
+        '8': null
+        '9': null
+        '10': null
+        '11': null
+        '12': null
+        '13': null
+        '14': null
+        '15': null
+        '16': null
+        '17': null
+        '18': null
+        '19': null
+        '20': null
+        '21': null
+        '22': null
+        '23': null
+        '24': null
+        '25': null
+        '26': null
+        '27': null
+        '28': null
+        '29': null
+        '30': null
+        '31': null
+        '32': null
+        '33': null
+        '34': null
+        '35': null
+        '36': null
+      join-message: Voce entrou no jogo como <teamcolor><team>.
+      score-message-title: '<bluecolor><bluescore> : <redcolor><redscore>'
+      signs:
+        '1':
+          world: world
+          x: -44.0
+          y: 151.0
+          z: 59.0
+          yaw: 0.0
+          pitch: 0.0
+      score-message-subtitle: <bluecolor><player> marcou para <blue>
+      leave-message: Voce saiu do jogo.
+      win-message-title: <bluecolor><blue>
+      lines:
+      - '&lFutebobora'
+      - <game>
+      - <teamcolor><team>
+      - <players>/<maxplayers>
+      win-message-subtitle: <bluecolor><blue>&a Ganhou a partida
+      draw-message-title: <bluecolor><blue>
+      draw-message-subtitle: '&eA partida terminou empate.'
+      points-per-goal: 1
+      points-per-opponent-death: 0
+    bungeecord-meta:
+      kick-message: O servidor ja esta cheio.
+      kick-message-leave: Voce saiu do jogo.
+      fallback-server: ''
+    ball:
+      size: NORMAL
+      skin: http://textures.minecraft.net/texture/8e4a70b7bbcd7a8c322d522520491a27ea6b83d60ecf961d2b4efbbf9f605d
+      slime-visible: false
+      interaction-hitbox-size: 2.0
+      kickpass-hitbox-size: 5.0
+      kickpass-delay-ticks: 5
+      interaction-cooldown-ticks: 20
+      rotating: true
+      enable-kick: true
+      enable-pass: true
+      enable-interact: true
+      hitbox-relocation: 0.0
+      always-bounce: true
+      modifiers:
+        gravity-mod: 0.07
+        air-resistance: 0.001
+        rolling-resistance: 0.1
+        horizontal-touch: 1.0
+        vertical-touch: 1.0
+        shot-velocity: 1.5
+        pass-velocity: 1.2
+        max-spin: 0.08
+        max-pitch: 60
+        min-pitch: 0
+        default-pitch: 20
+      particle-effects:
+        ONKICK:
+          name: large_explosion
+          amount: 2
+          speed: 0.1
+          offset:
+            x: 0.1
+            y: 0.1
+            z: 0.1
+          data: 0
+        ONPASS:
+          name: NONE
+          amount: 1
+          speed: 1.0
+          offset:
+            x: 1.0
+            y: 1.0
+            z: 1.0
+          data: 0
+        ONMOVE:
+          name: none
+          amount: 0
+          speed: 0.0
+          offset:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+          data: 0
+        ONSPAWN:
+          name: explosion
+          amount: 10
+          speed: 0.1
+          offset:
+            x: 2.0
+            y: 2.0
+            z: 2.0
+          data: 0
+        ONINTERACTION:
+          name: none
+          amount: 0
+          speed: 0.0
+          offset:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+          data: 0
+        ONGOAL:
+          name: none
+          amount: 0
+          speed: 0.0
+          offset:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+          data: 0
+      sound-effects:
+        ONKICK:
+          name: ENTITY_ZOMBIE_ATTACK_DOOR_WOOD
+          pitch: 1.0
+          volume: 10.0
+          effecting: EVERYONE
+        ONPASS:
+          name: none
+          pitch: 1.0
+          volume: 1.0
+          effecting: NOBODY
+        ONMOVE:
+          name: none
+          pitch: 0.0
+          volume: 0.0
+          effecting: EVERYONE
+        ONSPAWN:
+          name: none
+          pitch: 0.0
+          volume: 0.0
+          effecting: EVERYONE
+        ONINTERACTION:
+          name: none
+          pitch: 0.0
+          volume: 0.0
+          effecting: EVERYONE
+        ONGOAL:
+          name: none
+          pitch: 0.0
+          volume: 0.0
+          effecting: EVERYONE
+      spawn-delay: 0
+      spawnpoint:
+        world: world
+        x: -44.46081135303053
+        y: 151.0
+        z: 92.51477822294714
+        yaw: -178.96377563476562
+        pitch: 88.94998931884766
+    protection:
+      entity-protection-enabled: true
+      entity-protection:
+        x: 5.0
+        y: 2.0
+        z: 5.0
+        yaw: 0.0
+        pitch: 0.0
+      rejoin-protection-enabled: true
+      rejoin-protection:
+        x: 0.0
+        y: 2.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+    scoreboard:
+      title: '&aFutebobora'
+      enabled: true
+      lines:
+      - ''
+      - '&6Tempo: '
+      - <time>
+      - ''
+      - '&m           &r'
+      - '<redcolor><red>:'
+      - '&l<redscore>'
+      - ''
+      - '<bluecolor><blue>:'
+      - '&l<bluescore>'
+      - '&m           &r'
+    bossbar:
+      enabled: false
+      text: '<redcolor><red> <redscore> : <bluecolor><bluescore> <blue>'
+      percentage: 100.0
+      color: WHITE
+      style: SOLID
+      flags: {}
+    double-jump:
+      enabled: true
+      cooldown: 2
+      vertical-strength: 1.0
+      horizontal-strength: 2.0
+      particle-effect:
+        name: explosion
+        amount: 4
+        speed: 2.0E-4
+        offset:
+          x: 2.0
+          y: 2.0
+          z: 2.0
+        data: 0
+      sound-effect:
+        name: ENTITY_GHAST_SHOOT
+        pitch: 1.0
+        volume: 10.0
+        effecting: EVERYONE
+    holograms: {}
+    reward-meta:
+      money-reward: {}
+      command-reward: {}
+    spectator-meta:
+      notify-nearby-players-enabled: false
+      notify-nearby-players-radius: 50
+      spectatormode-enabled: true
+      spectatormode-start-message:
+      - O jogo esta cheio! Voce quer assistir?
+      - §a[Start spectating]
+    customizing-meta:
+      damage-enabled: false
+      score-back-teleport: false
+      score-back-teleport-delay: 2
+      ball-forcefield: true
+      keep-inventory: false
